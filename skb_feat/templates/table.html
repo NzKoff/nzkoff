@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Поиск мероприятий</title>
+ <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.min.js"></script>
+<meta http-equiv="Content-Type"content="text/html; charset=utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylemain.css') }}">
+	<script type="text/javascript">
+		var app = angular.module("Bet", []);
+		app.controller("BetController", function($scope, $http){
+			$scope.test = function(event){
+				debugger
+			}
+			var TC = this;
+			TC.database = [];
+			TC.loadList = function(){
+
+				$http
+					.get('http://localhost:5000/getTable')
+					.success(function (result){
+						TC.database = result;
+					})
+					.error(function (error){
+						<!--alert("Error"+error);-->
+					});
+			};
+
+			window.setInterval(
+					function updateDiv1(){
+						TC.loadList();
+					}, 5000
+			);
+			TC.loadList();
+		});
+	</script>
+</head>
+<body ng-app = "Bet" ng-controller="BetController as tc">
+  <div class="blok-menu">
+<ul class="menu">
+<li><a href="logout">Выход</a></li>
+<img src="{{ url_for('static', filename='images/901.png') }}" style="margin-left:40px";/>
+</ul>
+</div>
+
+  <div class="content" >
+      <table class="table">
+        <thead>
+          <tr>
+              <td>Время</td>
+              <td>Дата</td>
+              <td>Название</td>
+              <td>Описание</td>
+              <td>Место</td>
+              <td>Стоимость</td>
+              <td>Количество людей</td>
+              <td>Регистрация</td>
+            </tr>
+        </thead>
+        <tbody  >
+               {{% for data in datas %}}
+          <tr>
+            <td> {{ data.time_start }} </td>
+            <td> {{data.date}} </td>
+            <td>{{data.name}} </td>
+            <td>{{ data.description }}</td>
+            <td> {{data.address }}</td>
+            <td>{{data.price}} </td>
+            <td>{{data.count_persons }} </td>
+{#            <td> <form method="GET" action="http://0.0.0.0:5000/reg_on_event/{{data.id}}"><p><input class="regbut" type="submit" name="id" value="Зарегистрироваться"/></p></form></td>#}
+               {{% endfor %}}
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

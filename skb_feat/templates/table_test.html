@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Главная</title>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.min.js"></script>
+	<!--<script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>-->
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">-->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/stylemain.css') }}">
+<script type="text/javascript">
+           func =function(event_id) {
+               $
+					.get('http://localhost:5000/add_person/' + event_id + "/" + {{ id_user}})
+					.success(
+					    alert("УСПЕШНО")
+                    )
+					.error(function (error){
+						alert("ЗАРЕГИСТРОВАНЫ")
+					});
+			};
+</script>
+</head>
+<body >
+
+	<div class="row justify-content-center" >
+
+			<table class="table">
+				<thead>
+					<tr>
+						<th> Время </th>
+						<th>Дата</th>
+						<th>Название </th>
+						<th>Описание </th>
+				        <th>Место</th>
+				        <th>Стоймость </th>
+				        <th>Количество Людей </th>
+				        <th>Регистрация</th>
+
+				    </tr>
+				</thead>
+				<tbody>
+
+                 {% for data in datas %}
+                       <tr >
+
+                <td> {{ data.time_start }}</td>
+            <td> {{data.date}} </td>
+            <td>{{data.name}} </td>
+            <td>{{ data.description }}</td>
+            <td> {{data.address }}</td>
+            <td>{{data.price}} </td>
+            <td>{{data.count_persons }} </td>
+                           <td> <form id="form1" onsubmit=func({{  data.id}} > <button form="form1" class="regbut" type="submit">register </button> </form></td>
+                  </tr>
+                {% endfor %}
+                <!--
+                 method="GET" action="http://0.0.0.0:5000/reg_on_event/id = "
+                 -->
+
+
+
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>
+

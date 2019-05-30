@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Мероприятие</title>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.min.js"></script>
+    <meta http-equiv="Content-Type"content="text/html; charset=utf-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css"href="{{ url_for('static', filename='css/styleevent.css') }}">
+</head>
+<body>
+<div class="blok-menu">
+<ul class="menu">
+<li><a href="profile">Профиль</a></li>
+</ul>
+</div>
+<div class="content">
+<h2>Мероприятие: {{ event.name }}</h2><br>
+<c2>Описание: {{ event.description }}</c2><br>
+<c2>Время: {{ event.time }}</c2><br>
+<c2>Дата: {{ event.date }}</c2><br><br><br>
+<p><img src="images/music.jpg" class="left"/></p>
+<div class="ist-menu" style="margin-top:50%";>
+<ul class="ist">
+<lo>Посетители</lo style="margin-bottom:2%";>
+</div>
+<table>
+  <thead>
+    <tr>
+      <th>Имя</th>
+      <th>Фамилия</th>
+      <th>Ссылка на профиль</th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for user in users %}
+    <tr>
+      <td>{{ user.firstname }}</td>
+      <td>{{ user.secondname }}</td>
+        <td><a href="http://localhost:5000/profile/id=" + {{ user.user_id }}> Click </a></td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
+</div> 
+</body>
+</html> 

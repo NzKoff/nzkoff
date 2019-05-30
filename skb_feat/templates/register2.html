@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Поиск лобби</title>
+<meta http-equiv="Content-Type"content="text/html; charset=utf-8">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styleregister.css') }}">
+</head>
+<body>
+<div class="blok-menu">
+<ul class="menu">
+<li><a href="#">Регистрация</a></li>
+<li><a href="lobby.html">Лобби</a></li>
+<img src="{{ url_for('static', filename='images/901.png') }}" style="margin-left:40px";/>
+</ul>
+</div>
+<div class="content">
+<h2>Регистрация</h2><br>
+<form method="POST" action="register/">
+    <p>Ваш никнейм:<input type="text" required size="40" style="margin-left:86px" textarea placeholder="Введите никнейм"></p>
+    <p>Ваш пароль:<input type="password" required size="40" style="margin-left:98px" textarea placeholder="Введите пароль"></p>
+    <p>Подтвердите пароль:<input type="password" required size="40" style="margin-left:35px" textarea placeholder="Введите пароль"></p>
+    <p>Ваше имя:<input type="text" size="40" required style="margin-left:113px" textarea placeholder="Введите имя"></p>
+    <p>Вашa фамилию:<input type="text" size="40" required style="margin-left:71px" textarea placeholder="Введите фамилию"></p>
+    <p>Дата рождения:<input type="date" size="40" required style="margin-left:72px" textarea placeholder="Введите дату рождения"></p>
+    <p>Ваш пол:
+        <input style="margin-left:125px" type="radio" name="pol" value="male">Male
+        <input type="radio" name="pol" required value="male">Female</p>
+    <p>Ваши интересы:<Br><input type="checkbox" name="hobby" value="music" required style="margin-left:208px">&nbsp;&nbsp;Музыка<Br>
+    <input type="checkbox" name="hobby" value="teatr" style="margin-left:208px">&nbsp;&nbsp;Театр<Br>
+    <input type="checkbox" name="hobby" value="kino" style="margin-left:208px">&nbsp;&nbsp;Кино<Br>
+    <input type="checkbox" name="hobby" value="cirk" style="margin-left:208px">&nbsp;&nbsp;Цирк<Br>
+    <input type="checkbox" name="hobby" value="mus" style="margin-left:208px">&nbsp;&nbsp;Музей<Br>
+    <input type="checkbox" name="hobby" value="vistavki" style="margin-left:208px">&nbsp;&nbsp;Выставки<br>
+    <input type="checkbox" name="hobby" value="drugoe" style="margin-left:208px">&nbsp;&nbsp;И другие<br><br></p>
+    <p>Социальные сети:<input type="text" required size="40" style="margin-left:60px"></p><br>
+    <p><input class="regbut" type="submit" value="Зарегистрироваться" style="margin-left:35%"></p>
+</form>
+</div> 
+<div class="footer">
+<p><a>life</a> © 2019</p>
+</div>
+</body>
+</html> 

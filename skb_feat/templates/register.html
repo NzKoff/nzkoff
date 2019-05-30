@@ -1,0 +1,47 @@
+
+<html>
+<head>
+<title>Поиск лобби</title>
+<meta http-equiv="Content-Type"content="text/html; charset=utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styleregister.css') }}">
+</head>
+<body>
+<div class="blok-menu">
+<ul class="menu">
+<li><a href="#">Регистрация</a></li>
+<li><a href="#">Лобби</a></li>
+<img src="{{ url_for('static', filename='images/901.png') }}" style="margin-left:40px";/>
+</ul>
+</div>
+<div class="content">
+<h2>Регистрация</h2><br>
+<form method="POST" action="register/">
+    <p>Ваш никнейм:<input type="text" name="login" required size="40" minlength="6" maxlength="32" style="margin-left:86px" textarea placeholder="Введите никнейм"></p>
+    <p>Ваш пароль:<input type="password" name="password" required size="40" minlength="6" maxlength="32" style="margin-left:98px" textarea placeholder="Введите пароль"></p>
+    <p>Подтвердите пароль:<input type="password" name="surepassword"required size="40" minlength="6" maxlength="32" style="margin-left:35px" textarea placeholder="Введите пароль"></p>
+    <p>Ваше имя:<input type="text" size="40" name="firstname" required minlength="2" maxlength="32" style="margin-left:113px" textarea placeholder="Введите имя"></p>
+    <p>Вашa фамилию:<input type="text" size="40" name="secondname" required minlength="2" maxlength="32" style="margin-left:71px" textarea placeholder="Введите фамилию"></p>
+    <p>Дата рождения:<input type="date" size="40" name="bday" required style="margin-left:72px" minlength="8" maxlength="8" textarea placeholder="Введите дату рождения"></p>
+    <p>Ваш пол:
+        <input style="margin-left:125px" type="radio" name="sex" value="0">Male
+        <input type="radio" name="sex" required value="1">Female</p>
+    <p>Ваши интересы:<Br><input type="checkbox" name="hobby" value="0" required style="margin-left:208px">&nbsp;&nbsp;Музыка<Br>
+    <input type="checkbox" name="hobby" value="1" style="margin-left:208px">&nbsp;&nbsp;Театр<Br>
+    <input type="checkbox" name="hobby" value="2" style="margin-left:208px">&nbsp;&nbsp;Кино<Br>
+    <input type="checkbox" name="hobby" value="3" style="margin-left:208px">&nbsp;&nbsp;Цирк<Br>
+    <input type="checkbox" name="hobby" value="4" style="margin-left:208px">&nbsp;&nbsp;Музей<Br>
+    <input type="checkbox" name="hobby" value="5" style="margin-left:208px">&nbsp;&nbsp;Выставки<br>
+    <input type="checkbox" name="hobby" value="6" style="margin-left:208px">&nbsp;&nbsp;И другие<br><br></p>
+    <p>Социальные сети:<input type="text" name="social_link" required size="40" minlength="6" maxlength="100" style="margin-left:60px"></p><br>
+    <p><input class="regbut" type="submit" value="Зарегистрироваться" style="margin-left:28%"></p>
+</form>
+</div>
+<div class="footer">
+<p><a>life</a> © 2019</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html class="nojs html css_verticalspacer" lang="ru-RU">
+ <head>
+
+  <meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+  <meta name="generator" content="2018.1.0.386"/>
+  
+  <script type="text/javascript">
+   // Update the 'nojs'/'js' class on the html node
+document.documentElement.className = document.documentElement.className.replace(/\bnojs\b/g, 'js');
+
+// Check that all required assets are uploaded and up-to-date
+if(typeof Muse == "undefined") window.Muse = {}; window.Muse.assets = {"required":["museutils.js", "museconfig.js", "jquery.musepolyfill.bgsize.js", "jquery.watch.js", "webpro.js", "require.js", "index.css"], "outOfDate":[]};
+</script>
+  
+  <title>regist</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/registr_global.css') }}"/>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/registr.css') }}" id="pagesheet"/>
+   </head>
+ <body>
+
+  <div class="sex clearfix" id="page"><!-- column -->
+   <div class="position_content" id="page_position_content">
+    <div class="browser_width colelem" id="u97-bw">
+     <div class="clearfix" id="u97"><!-- group -->
+      <div class="museBGSize grpelem" id="u3878"><!-- simple frame --></div>
+      <a class="nonblock nontext rounded-corners clearfix grpelem" id="u3511-4" href="/"><!-- content --><p>Главная</p></a>
+     </div>
+    </div>
+    <div class="clearfix colelem" id="ppu4708"><!-- group -->
+     <div class="clearfix grpelem" id="pu4708"><!-- column -->
+      <div class="museBGSize rounded-corners colelem" id="u4708"><!-- simple frame --></div>
+      <div class="museBGSize rounded-corners colelem" id="u4683"><!-- simple frame --></div>
+     </div>
+     <div class="clearfix grpelem" id="pu4672"><!-- column -->
+      <div class="museBGSize rounded-corners colelem" id="u4672" data-mu-ie-matrix="progid:DXImageTransform.Microsoft.Matrix(M11=0.9877,M12=-0.1564,M21=0.1564,M22=0.9877,SizingMethod='auto expand')" data-mu-ie-matrix-dx="-9" data-mu-ie-matrix-dy="-11"><!-- simple frame --></div>
+      <div class="museBGSize rounded-corners colelem" id="u4697"><!-- simple frame --></div>
+     </div>
+     <div class="clearfix grpelem" id="u3507-4"><!-- content -->
+      <p>Выставка</p>
+     </div>
+     <div class="clearfix grpelem" id="u4284"><!-- group -->
+      <div class="sex rounded-corners clearfix grpelem" id="u4365"><!-- column -->
+       <div class="rounded-corners clearfix colelem" id="u4285-4"><!-- content -->
+        <p>Регистрация</p>
+       </div>
+       <div class="clearfix colelem" id="pwidgetu4286"><!-- group -->
+        <form class="form-grp clearfix grpelem" id="widgetu4286" method="post"  action="{{ url_for('register') }}"><!-- none box -->
+         <div class="fld-grp clearfix grpelem" id="widgetu4334" data-required="true"><!-- none box -->
+          <label class="fld-label actAsDiv rounded-corners clearfix grpelem" id="u4337-4" for="widgetu4334_input"><!-- content --><span class="actAsPara">Ваш никнейм:</span></label>
+          <span class="fld-input NoWrap actAsDiv rounded-corners clearfix grpelem" id="u4335-4"><!-- content --><input class="wrapped-input" type="text" spellcheck="false" id="widgetu4334_input" name="username" tabindex="1"/><label class="wrapped-input fld-prompt" id="widgetu4334_prompt" for="widgetu4334_input"><span class="actAsPara">Введите никнейм</span></label></span>
+         </div>
+         <div class="fld-grp clearfix grpelem" id="widgetu4301" data-required="true"><!-- none box -->
+          <label class="fld-label actAsDiv rounded-corners clearfix grpelem" id="u4303-4" for="widgetu4301_input"><!-- content --><span class="actAsPara">Пароль:</span></label>
+          <span class="fld-input NoWrap actAsDiv rounded-corners clearfix grpelem" id="u4302-4"><!-- content --><input class="wrapped-input" type="password" id="widgetu4301_input" name="passsword" tabindex="2"/><label class="wrapped-input fld-prompt" id="widgetu4301_prompt" for="widgetu4301_input"><span class="actAsPara">Введите пароль</span></label></span>
+         </div>
+         <div class="fld-grp clearfix grpelem" id="widgetu4322" data-required="true"><!-- none box -->
+          <label class="fld-label actAsDiv rounded-corners clearfix grpelem" id="u4324-4" for="widgetu4322_input"><!-- content --><span class="actAsPara">Подтвердить пароль:</span></label>
+          <span class="fld-input NoWrap actAsDiv rounded-corners clearfix grpelem" id="u4325-4"><!-- content --><input class="wrapped-input" type="password" id="widgetu4322_input" name="confirm_password" tabindex="3"/><label class="wrapped-input fld-prompt" id="widgetu4322_prompt" for="widgetu4322_input"><span class="actAsPara">Подтвердите пароль</span></label></span>
+         </div>
+         <div class="fld-grp clearfix grpelem" id="widgetu4357" data-required="true"><!-- none box -->
+          <label class="fld-label actAsDiv rounded-corners clearfix grpelem" id="u4358-4" for="widgetu4357_input"><!-- content --><span class="actAsPara">Ваше имя:</span></label>
+          <span class="fld-input NoWrap actAsDiv rounded-corners clearfix grpelem" id="u4359-4"><!-- content --><input class="wrapped-input" type="text" id="widgetu4357_input" name="firstname" tabindex="4"/><label class="wrapped-input fld-prompt" id="widgetu4357_prompt" for="widgetu4357_input"><span class="actAsPara">Введите имя</span></label></span>
+         </div>
+         <div class="fld-grp clearfix grpelem" id="widgetu4361" data-required="true"><!-- none box -->
+          <label class="fld-label actAsDiv rounded-corners clearfix grpelem" id="u4363-4" for="widgetu4361_input"><!-- content --><span class="actAsPara">Ваша фамилия:</span></label>
+          <span class="fld-input NoWrap actAsDiv rounded-corners clearfix grpelem" id="u4362-4"><!-- content --><input class="wrapped-input" type="text" id="widgetu4361_input" name="secondname" tabindex="5"/><label class="wrapped-input fld-prompt" id="widgetu4361_prompt" for="widgetu4361_input"><span class="actAsPara">Введите фамилию</span></label></span>
+         </div>
+         <div class="fld-grp clearfix grpelem" id="widgetu4318" data-required="true"><!-- none box -->
+          <label class="fld-label actAsDiv rounded-corners clearfix grpelem" id="u4319-4" for="widgetu4318_input"><!-- content --><span class="actAsPara">Дата рождения</span></label>
+          <span class="fld-input NoWrap actAsDiv rounded-corners clearfix grpelem" id="u4320-4"><!-- content --><input class="wrapped-input" type="date" id="widgetu4318_input" name="bday" tabindex="6"/><label class="wrapped-input fld-prompt" id="widgetu4318_prompt" for="widgetu4318_input"><span class="actAsPara"></span></label></span>
+         </div>
+         <div class="fld-grp clearfix grpelem" id="widgetu4287" data-required="true" data-type="radiogroup"><!-- none box -->
+          <label class="fld-label actAsDiv rounded-corners clearfix grpelem" id="u4291-4"><!-- content --><span class="actAsPara">Пол:</span></label>
+          <div class="fld-grp clearfix grpelem" id="widgetu4292" data-required="false" data-type="radio"><!-- none box -->
+           <div class="fld-radiobutton museBGSize grpelem" id="u4293"><!-- simple frame -->
+            <input class="wrapped-input" type="radio" value="М" spellcheck="false" id="widgetu4292_input" name="sex" tabindex="7"/>
+            <label for="widgetu4292_input"></label>
+           </div>
+          </div>
+          <div class="fld-grp clearfix grpelem" id="widgetu4288" data-required="false" data-type="radio"><!-- none box -->
+           <div class="fld-radiobutton museBGSize grpelem" id="u4290"><!-- simple frame -->
+            <input class="wrapped-input" type="radio" value="Ж" spellcheck="false" id="widgetu4288_input" name="sex" tabindex="7"/>
+            <label for="widgetu4288_input"></label>
+           </div>
+          </div>
+         </div>
+         <div class="fld-grp clearfix grpelem" id="widgetu4348" data-required="true" data-type="checkboxgroup"><!-- none box -->
+          <label class="fld-label actAsDiv rounded-corners clearfix grpelem" id="u4352-4"><!-- content --><span class="actAsPara">Хобби:</span></label>
+          <div class="clearfix grpelem" id="pwidgetu4349"><!-- column -->
+           <div class="fld-grp clearfix colelem" id="widgetu4349" data-required="false" data-type="checkbox"><!-- none box -->
+            <div class="fld-checkbox museBGSize grpelem" id="u4351"><!-- simple frame -->
+             <input class="wrapped-input" type="checkbox" value="Подпись флажка" id="widgetu4349_input" name="custom_U4348[]" tabindex="8"/>
+             <label for="widgetu4349_input"></label>
+            </div>
+           </div>
+           <div class="fld-grp clearfix colelem" id="widgetu4353" data-required="false" data-type="checkbox"><!-- none box -->
+            <div class="fld-checkbox museBGSize grpelem" id="u4355"><!-- simple frame -->
+             <input class="wrapped-input" type="checkbox" value="Подпись флажка" id="widgetu4353_input" name="custom_U4348[]" tabindex="8"/>
+             <label for="widgetu4353_input"></label>
+            </div>
+           </div>
+          </div>
+         </div>
+         <div class="fld-grp clearfix grpelem" id="widgetu4297" data-required="true" data-type="checkbox"><!-- none box -->
+          <div class="fld-checkbox museBGSize grpelem" id="u4300"><!-- simple frame -->
+           <input class="wrapped-input" type="checkbox" value="0" id="widgetu4297_input" name="custom_U4297" tabindex="9"/>
+           <label for="widgetu4297_input"></label>
+          </div>
+         </div>
+         <div class="fld-grp clearfix grpelem" id="widgetu4326" data-required="true" data-type="checkbox"><!-- none box -->
+          <div class="fld-checkbox museBGSize grpelem" id="u4327"><!-- simple frame -->
+           <input class="wrapped-input" type="checkbox" value="1" id="widgetu4326_input" name="custom_U4326" tabindex="10"/>
+           <label for="widgetu4326_input"></label>
+          </div>
+         </div>
+         <div class="fld-grp clearfix grpelem" id="widgetu4340" data-required="true" data-type="checkbox"><!-- none box -->
+          <div class="fld-checkbox museBGSize grpelem" id="u4341"><!-- simple frame -->
+           <input class="wrapped-input" type="checkbox" value="2" id="widgetu4340_input" name="custom_U4340" tabindex="11"/>
+           <label for="widgetu4340_input"></label>
+          </div>
+         </div>
+         <div class="fld-grp clearfix grpelem" id="widgetu4310" data-required="true" data-type="checkbox"><!-- none box -->
+          <div class="fld-checkbox museBGSize grpelem" id="u4311"><!-- simple frame -->
+           <input class="wrapped-input" type="checkbox" value="3" id="widgetu4310_input" name="custom_U4310" tabindex="12"/>
+           <label for="widgetu4310_input"></label>
+          </div>
+         </div>
+         <div class="fld-grp clearfix grpelem" id="widgetu4314" data-required="true" data-type="checkbox"><!-- none box -->
+          <div class="fld-checkbox museBGSize grpelem" id="u4316"><!-- simple frame -->
+           <input class="wrapped-input" type="checkbox" value="4" id="widgetu4314_input" name="custom_U4314" tabindex="13"/>
+           <label for="widgetu4314_input"></label>
+          </div>
+         </div>
+         <div class="fld-grp clearfix grpelem" id="widgetu4330" data-required="true" data-type="checkbox"><!-- none box -->
+          <div class="fld-checkbox museBGSize grpelem" id="u4332"><!-- simple frame -->
+           <input class="wrapped-input" type="checkbox" value="5" id="widgetu4330_input" name="custom_U4330" tabindex="14"/>
+           <label for="widgetu4330_input"></label>
+          </div>
+         </div>
+         <div class="fld-grp clearfix grpelem" id="widgetu4305" data-required="true"><!-- none box -->
+          <label class="fld-label actAsDiv rounded-corners clearfix grpelem" id="u4306-4" for="widgetu4305_input"><!-- content --><span class="actAsPara">Социальная сеть:</span></label>
+          <span class="fld-input NoWrap actAsDiv rounded-corners clearfix grpelem" id="u4308-3"><!-- content --><input class="wrapped-input" type="text" id="widgetu4305_input" name="social_link" tabindex="15"/></span>
+         </div>
+         <div class="clearfix grpelem" id="pu4296-4"><!-- group -->
+          <div class="clearfix grpelem" id="u4296-4"><!-- content -->
+           <p>Отправка формы…</p>
+          </div>
+          <div class="clearfix grpelem" id="u4309-4"><!-- content -->
+           <p>На сервере произошла ошибка.</p>
+          </div>
+          <div class="clearfix grpelem" id="u4339-4"><!-- content -->
+           <p>Форма получена.</p>
+          </div>
+          <input class="submit-btn NoWrap rounded-corners clearfix grpelem" id="u4338-4" type="submit" value="Отправить" tabindex="16"/><!-- content -->
+         </div>
+        </form>
+        <div class="clearfix grpelem" id="u4375-4"><!-- content -->
+         <p>М</p>
+        </div>
+        <div class="clearfix grpelem" id="u4373-4"><!-- content -->
+         <p>Ж</p>
+        </div>
+        <div class="clearfix grpelem" id="u4378-4"><!-- content -->
+         <p>Музыка</p>
+        </div>
+        <div class="clearfix grpelem" id="u4366-4"><!-- content -->
+         <p>Театр</p>
+        </div>
+        <div class="rounded-corners clearfix grpelem" id="u4371-4"><!-- content -->
+         <p>Список интересов(Выберите пункты)</p>
+        </div>
+        <div class="clearfix grpelem" id="u4369-4"><!-- content -->
+         <p>Кино</p>
+        </div>
+        <div class="clearfix grpelem" id="u4376-4"><!-- content -->
+         <p>Цирк</p>
+        </div>
+        <div class="clearfix grpelem" id="u4370-4"><!-- content -->
+         <p>Музей</p>
+        </div>
+        <div class="clearfix grpelem" id="u4377-4"><!-- content -->
+         <p>Зоопарк</p>
+        </div>
+        <div class="clearfix grpelem" id="u4374-4"><!-- content -->
+         <p>и другие интересы</p>
+        </div>
+        <div class="grpelem" id="u4367"><!-- simple frame --></div>
+        <div class="grpelem" id="u4372"><!-- simple frame --></div>
+        <div class="grpelem" id="u4379"><!-- simple frame --></div>
+        <div class="grpelem" id="u4368"><!-- simple frame --></div>
+       </div>
+      </div>
+     </div>
+     <div class="clearfix grpelem" id="u4380-4"><!-- content -->
+      <p>Выставка</p>
+     </div>
+    </div>
+    <div class="verticalspacer" data-offset-top="975" data-content-above-spacer="974" data-content-below-spacer="37"></div>
+   </div>
+  </div>
+  <div class="preload_images">
+   <img class="preload" src="images/radiobuttonunchecked.png?crc=3976871150" alt=""/>
+   <img class="preload" src="images/radiobuttonuncheckedrollover.png?crc=4276313674" alt=""/>
+   <img class="preload" src="images/radiobuttonuncheckedmousedown.png?crc=54863585" alt=""/>
+   <img class="preload" src="images/radiobuttonchecked.png?crc=4193302265" alt=""/>
+   <img class="preload" src="images/radiobuttoncheckedrollover.png?crc=88928956" alt=""/>
+   <img class="preload" src="images/radiobuttoncheckedmousedown.png?crc=4280357799" alt=""/>
+   <img class="preload" src="images/checkboxunchecked.jpg?crc=495023700" alt=""/>
+   <img class="preload" src="images/checkboxuncheckedrollover.jpg?crc=4076496830" alt=""/>
+   <img class="preload" src="images/checkboxuncheckedmousedown.jpg?crc=361678653" alt=""/>
+   <img class="preload" src="images/checkboxchecked.jpg?crc=477278992" alt=""/>
+   <img class="preload" src="images/checkboxcheckedrollover.jpg?crc=435737969" alt=""/>
+   <img class="preload" src="images/checkboxcheckedmousedown.jpg?crc=4004261994" alt=""/>
+  </div>
+  <!-- Other scripts -->
+  <script type="text/javascript">
+   // Decide whether to suppress missing file error or not based on preference setting
+var suppressMissingFileError = false
+</script>
+  <script type="text/javascript">
+   window.Muse.assets.check=function(c){if(!window.Muse.assets.checked){window.Muse.assets.checked=!0;var b={},d=function(a,b){if(window.getComputedStyle){var c=window.getComputedStyle(a,null);return c&&c.getPropertyValue(b)||c&&c[b]||""}if(document.documentElement.currentStyle)return(c=a.currentStyle)&&c[b]||a.style&&a.style[b]||"";return""},a=function(a){if(a.match(/^rgb/))return a=a.replace(/\s+/g,"").match(/([\d\,]+)/gi)[0].split(","),(parseInt(a[0])<<16)+(parseInt(a[1])<<8)+parseInt(a[2]);if(a.match(/^\#/))return parseInt(a.substr(1),
+16);return 0},f=function(f){for(var g=document.getElementsByTagName("link"),j=0;j<g.length;j++)if("text/css"==g[j].type){var l=(g[j].href||"").match(/\/?css\/([\w\-]+\.css)\?crc=(\d+)/);if(!l||!l[1]||!l[2])break;b[l[1]]=l[2]}g=document.createElement("div");g.className="version";g.style.cssText="display:none; width:1px; height:1px;";document.getElementsByTagName("body")[0].appendChild(g);for(j=0;j<Muse.assets.required.length;){var l=Muse.assets.required[j],k=l.match(/([\w\-\.]+)\.(\w+)$/),i=k&&k[1]?
+k[1]:null,k=k&&k[2]?k[2]:null;switch(k.toLowerCase()){case "css":i=i.replace(/\W/gi,"_").replace(/^([^a-z])/gi,"_$1");g.className+=" "+i;i=a(d(g,"color"));k=a(d(g,"backgroundColor"));i!=0||k!=0?(Muse.assets.required.splice(j,1),"undefined"!=typeof b[l]&&(i!=b[l]>>>24||k!=(b[l]&16777215))&&Muse.assets.outOfDate.push(l)):j++;g.className="version";break;case "js":j++;break;default:throw Error("Unsupported file type: "+k);}}c?c().jquery!="1.8.3"&&Muse.assets.outOfDate.push("jquery-1.8.3.min.js"):Muse.assets.required.push("jquery-1.8.3.min.js");
+g.parentNode.removeChild(g);if(Muse.assets.outOfDate.length||Muse.assets.required.length)g="Некоторые файлы на сервере могут отсутствовать или быть некорректными. Очистите кэш-память браузера и повторите попытку. Если проблему не удается устранить, свяжитесь с разработчиками сайта.",f&&Muse.assets.outOfDate.length&&(g+="\nOut of date: "+Muse.assets.outOfDate.join(",")),f&&Muse.assets.required.length&&(g+="\nMissing: "+Muse.assets.required.join(",")),suppressMissingFileError?(g+="\nUse SuppressMissingFileError key in AppPrefs.xml to show missing file error pop up.",console.log(g)):alert(g)};location&&location.search&&location.search.match&&location.search.match(/muse_debug/gi)?
+setTimeout(function(){f(!0)},5E3):f()}};
+var muse_init=function(){require.config({baseUrl:""});require(["jquery","museutils","whatinput","jquery.musepolyfill.bgsize","jquery.watch","webpro"],function(c){var $ = c;$(document).ready(function(){try{
+window.Muse.assets.check($);/* body */
+Muse.Utils.transformMarkupToFixBrowserProblemsPreInit();/* body */
+Muse.Utils.prepHyperlinks(true);/* body */
+Muse.Utils.resizeHeight('.browser_width');/* resize height */
+Muse.Utils.requestAnimationFrame(function() { $('body').addClass('initialized'); });/* mark body as initialized */
+Muse.Utils.makeButtonsVisibleAfterSettingMinWidth();/* body */
+Muse.Utils.initWidget('#widgetu4286', ['#bp_infinity'], function(elem) { return new WebPro.Widget.Form(elem, {validationEvent:'submit',errorStateSensitivity:'high',fieldWrapperClass:'fld-grp',formSubmittedClass:'frm-sub-st',formErrorClass:'frm-subm-err-st',formDeliveredClass:'frm-subm-ok-st',notEmptyClass:'non-empty-st',focusClass:'focus-st',invalidClass:'fld-err-st',requiredClass:'fld-err-st',ajaxSubmit:true}); });/* #widgetu4286 */
+Muse.Utils.fullPage('#page');/* 100% height page */
+Muse.Utils.showWidgetsWhenReady();/* body */
+Muse.Utils.transformMarkupToFixBrowserProblems();/* body */
+}catch(b){if(b&&"function"==typeof b.notify?b.notify():Muse.Assert.fail("Error calling selector function: "+b),false)throw b;}})})};
+
+</script>
+  <!-- RequireJS script -->
+  <script src="scripts/require.js?crc=7928878" type="text/javascript" async data-main="scripts/museconfig.js?crc=4286661555" onload="if (requirejs) requirejs.onError = function(requireType, requireModule) { if (requireType && requireType.toString && requireType.toString().indexOf && 0 <= requireType.toString().indexOf('#scripterror')) window.Muse.assets.check(); }" onerror="window.Muse.assets.check();"></script>
+   </body>
+</html>

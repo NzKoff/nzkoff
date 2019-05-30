@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Главная</title>
+<meta http-equiv="Content-Type"content="text/html; charset=utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styleindex.css') }}">
+</head>
+<div style="background: {{ url_for( 'static', filename='images/backforindex.jpg') }}">
+<div class="blok-menu">
+<ul class="menu">
+<li><a href="#">Авторизация</a></li>
+<li><a href="lobby.html">Лобби</a></li>
+<img src="static/images/901.png" style="margin-left:40px";/>
+</ul>
+</div>
+<div class="content">
+<h2>Авторизация</h2><br>
+<form method="POST" action="login/">
+    <br>
+    <p>Ваш никнейм:<input type="text" required size="25" name="login" minlength="6" maxlength="32" style="margin-left:20px" placeholder="Введите никнейм"></p>
+    <br>
+    <p>Ваш пароль:<input type="password" required size="25" name="password" minlength="6" maxlength="32" style="margin-left:31px" placeholder="Введите пароль"></p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p><input class="regbut" type="submit" value="Войти" style="margin-left:20%"></p>
+</form>
+</div>
+<div class="texted">
+  <font color="FFFFFF" size="6" align="center"><p>Добро пожаловать!</p></font>
+  <font color="FFFFFF" size="4" align="center"><p>Может быть вы гость города Новосибирск? Или просто думаете куда пойти? Или все друзья оказались занятыми и вы не знаете с кем сходить в интересное вам место? Тогда мы спешим к вам на помощь!
+
+С помощью нашего сайта вы можете найти мероприятия и людей, с которыми можно на них сходить.
+
+Для этого вам необходимо авторизоваться в форме справа или пройти регистрацию, нажав на кнопку "Зарегистрироваться".
+
+На данный момент сайт поддерживает следующие возможности: поиск киносеансов, цирковых шоу и выставок в музеях города Новосибирска.
+
+</p></font>
+</div>
+</body>
+</html>
