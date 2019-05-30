@@ -1,1 +1,1 @@
-token = '455492803:AAEU6LC5ofpwJa3MolOVyYqeocDK4h1nVZc'
+token = 'SECRET:SECRET'
